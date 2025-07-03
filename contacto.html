@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- ICONO PAGINA WEB -->
+    <link rel="icon" sizes="64x64" href="img/LOGOTIPO.svg">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Contacto</title>
+</head>
+<body>
+<body>
+    <!-- Menu Principal -->
+    <header id="menuPort">
+        <!-- Contenedor de logo + título -->
+        <div class="logo-titulo">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGOTIPO.svg" alt="Logo"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="diseño_grafico.html">Diseño Gráfico</a></li>
+                <li><a href="arte_digital.html">Arte Digital</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+            <div class="contacto-hero">
+                <img src="img/fondo-contacto.jpg" alt="Fondo contacto">
+            </div>
+            <div id="tituloG">
+                <h1>CONTACTOS</h1>
+            </div>
+    </section>
+
+    <!-- Section de contacto -->
+    <section id="contacto">    
+        <!-- Bloque superior con título -->
+        <div class="contacto-header">
+            <h1>¿Por dónde me puedes encontrar?</h1>
+        </div>
+
+        <!-- Contenedor con dos columnas -->
+        <div class="contacto-container">
+            <!-- Mapa -->
+            <div class="contacto-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.9814619080953!2d-58.5146345252841!3d-34.55402475487374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb721c9b6fafb%3A0x1975ce09ac01eaa5!2sACB%2C%20Talcahuano%2090%2C%20B1603%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1749742934878!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Columna: Formulario dentro de bloque -->
+            <div class="contacto-form">
+                <div class="form-bloque">
+                    <h3>Contáctame</h3>
+                    <p>Envía tu consulta o simplemente manda un mensaje.</p>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"  placeholder="Introduce tu nombre" required>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email"  placeholder="Introduce tu mail" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"  placeholder="Deja tu consulta o mensaje aqui"required></textarea>
+
+                        <div class="boton-formulario">
+                            <button class="boton-enviar" type="submit">Enviar</button>
+                            <button class="boton-resetear" type="reset">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="conocimientos">
+        <h2>Tambien en mis redes sociales</h2>
+
+        <div class="conocimientos-grid">
+            <!-- Instagram Diseño-->
+            <article class="skill">
+                <a href="https://www.instagram.com/rodri.design_/" target="_new"><img src="img/contacto/instagram-01.svg" alt="InstagramD"></a>
+                <h3>Instagram Diseño Grafico</h3>
+            </article>
+
+            <!-- Instagram Arte-->
+            <article class="skill">
+                <a href="https://www.instagram.com/rodri_artist/"target="_new"><img src="img/contacto/instagram-01.svg" alt="InstagramA"></a>
+                <h3>Instagram Arte Digital</h3>
+            </article>
+
+            <!-- Instagram -->
+            <article class="skill">
+                <a href="https://www.behance.net/rodrigoprieto12"target="_new"><img src="img/contacto/behance-01.svg" alt="Behance"></a>
+                <h3>Behance</h3>
+            </article>         
+        </div>
+    </section>
+
+
+
+    <!-- Pie de Pagina (Footer) -->
+    <footer>
+        <div class="footer-logo">
+            <h2>Mi Portafolio Personal</h2>
+        </div>
+        <!-- Iconos - Botones  -->
+        <div class="footer-icons">
+            <a href="#" ><img src="img/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="img/mail.svg" alt="Mail"></a>
+            <a href="#"><img src="img/ubicacion.svg" alt="Ubicación"></a>
+            <a href="#"><img src="img/behance.svg" alt="Behance"></a>
+        </div>
+
+        <!-- Texto Footer -->
+        <div class="footer-info">
+            <p>2025 - Diseñado por Rodrigo Prieto</p>
+            <p><a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a></p>
+        </div>
+    </footer>
+</body>
+</html>

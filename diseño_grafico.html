@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- ICONO PAGINA WEB -->
+    <link rel="icon" sizes="64x64" href="img/LOGOTIPO.svg">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Diseño Grafico</title>
+</head>
+<body>
+    <!-- Menu Principal -->
+    <header id="menuPort">
+        <!-- Contenedor de logo + título -->
+        <div class="logo-titulo">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGOTIPO.svg" alt="Logo"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="diseño_grafico.html">Diseño Gráfico</a></li>
+                <li><a href="arte_digital.html">Arte Digital</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Carrusel img fondos -->
+    <section id="carrusel">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
+        <div class="f-carousel" id="myCarousel">
+            <div class="f-carousel__viewport">
+                <div class="f-carousel__slide"><img src="img/foto-escritorio.jpg" alt="fondo 1"></div>
+                <div class="f-carousel__slide"><img src="img/fotografia-pc.jpg" alt="fondo 2"></div>
+                <div class="f-carousel__slide"><img src="img/foto-usando.jpg" alt="fondo 3"></div>
+            </div>
+        </div>
+        <!-- Codigo Script para el carrusel  -->
+        <script>
+        const container = document.getElementById("myCarousel");
+        const options = { infinite:false };
+        Carousel(container, options).init();
+        </script>
+    </section>
+
+    <div id="tituloG">
+        <h1>DISEÑO GRAFICO</h1>
+    </div>
+
+    <!-- Section 1 Diseño Gráfico -->
+    <section id="diseño-grafico">
+        <!-- Fila 1: ¿Por qué me interesa el Diseño Gráfico? -->
+        <div class="fila fila1">
+            <!-- Contenido textual -->
+            <article class="bloque-texto">
+                <h2>¿Por qué me interesa el Diseño Gráfico?</h2>
+                <p>
+                    Mi interés por el diseño nace gracias al arte en sí. Con mis dibujos solía o quería expresarme, es por eso que el diseño gráfico fue el camino ideal para canalizar esa creatividad y poder expresarla al público con un fin.
+                </p>
+                <a href="#servicio" class="boton_D">Ver mis servicios</a>
+            </article>
+            <!-- Bloque decorativo azul -->
+            <div class="bloque-decorativo"></div>            
+        </div>
+
+        <div class="fila fila2">
+            <!-- Fondo decorativo "recortado" -->
+            <div class="bloque-decorativo bloque-secundario"></div>
+            
+            <!-- Contenido textual -->
+            <article class="bloque-derecha">
+                <h2>¿Qué puedo hacer?</h2>
+                <h3>En el Diseño Gráfico, ¿qué es lo que suelo hacer?</h3>
+                <p>Estoy explorando varias ramas del Diseño Gráfico, no tengo nada fijo. Últimamente estoy trabajando en pósters, ya sean tipográficos o visuales, así como también en publicidades. Poco a poco, también incursiono en video mediante After Effects y en el diseño de marcas junto a su packaging. Todavía estoy en desarrollo como diseñador gráfico, pero siempre con ganas de mejorar.</p>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Section 2 Mi Servicio-->
+    <section id="mi-servicio">
+        <h2>Mis Servicios</h2>
+        <div class="servicio-grid">
+            <!--  Servicio 1 -->
+            <article class="servicio">
+                <figure>
+                    <img src="img/diseño-grafico/visual.svg" alt="serivicio 1" >
+                </figure>
+                <h3>Identidad Visual</h3>
+                <p>Diseño de logotipos y desarrollo de marcas visuales sólidas, pensadas para destacar y perdurar.</p>
+            </article>
+
+            <!-- Servicio 2 -->
+            <article class="servicio">
+                <figure>
+                    <img src="img/diseño-grafico/diseño.svg" alt="serivicio 2">
+                </figure>
+                <h3>Diseño Grafico</h3>
+                <p>Piezas gráficas a medida: pósters, flyers y contenido visual para proyectos personales o culturales</p>
+            </article>
+
+            <!-- Servicio 3  -->
+            <article class="servicio">
+                <figure>
+                    <img src="img/diseño-grafico/video.svg" alt="serivicio 3" >
+                </figure>
+                <h3>Edición de Video</h3>
+                <p>Montaje y edición básica de video para redes, reels o clips. Enfoque visual claro y dinámico.</p>
+            </article>
+
+            <!-- Servicio 4 -->
+            <article class="servicio">
+                <figure>
+                    <img src="img/diseño-grafico/redes.svg" alt="serivicio 4">
+                </figure>
+                <h3>Diseño para Redes Sociales</h3>
+                <p>Diseño de contenido visual optimizado para redes sociales: stories, reels, posts, banners y más</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section 3 Portafolio Diseño Grafico-->
+    <section id="portafolio">
+
+        <h2>Portafolio Diseño Gráfico</h2>
+
+        <!-- Tema 1 Afiches-Mockups etc -->
+        <h3 class="subtitulo-portafolio">Diseño Grafico General</h3>
+        <div class="grid-portafolio">
+            <!-- Trabajo 1 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto1.html">
+                    <img src="img/diseño-grafico/Portafolio/afiches-mockup/DGT3AP_Mockup_Etiquetas Grupal.jpg" alt="Etiqueta Friedrich">
+                    <h3>Etiquetas de Caspar David Friedrich</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 2 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto2.html">
+                    <img src="img/diseño-grafico/Portafolio/afiches-mockup/TP1_Fundamentos del Arte_MOCKUP.jpg" alt="Estampa Atenea">
+                    <h3>Estampa de Atenea</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 3 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto3.html">
+                    <img src="img/diseño-grafico/Portafolio/afiches-mockup/Julian Alvarez Poster 2.jpg" alt="Poster Julian Alvarez">
+                    <h3>Poster Julian Alvarez</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 4 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto4.html">
+                    <img src="img/diseño-grafico/Portafolio/afiches-mockup/Lamine Yamal Barcelona Poster.jpg" alt="Poster Lamine Yamal">
+                    <h3>Poster Lamine Yamal</h3>
+                </a>
+            </article>
+            
+            <!-- Trabajo 5 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto5.html">
+                    <img src="img/diseño-grafico/Portafolio/afiches-mockup/Lionel Messi Poster 1.jpg" alt="Poster Messi">
+                    <h3>Poster Lionel Messi</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 6 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto6.html">
+                    <img src= "img/diseño-grafico/Portafolio/afiches-mockup/Afiche Publicitario Wacom.jpg" alt="Afiche Publicitario Wacom">
+                    <h3>Afiche Publicitario Wacom</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 7 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto7.html">
+                    <img src="img/diseño-grafico/Portafolio/interactivo/Pantalla Home.jpg" alt="Diseño App">
+                    <h3>Diseño Interfaz StarPoint</h3>
+                </a>
+            </article>
+
+            <!-- Ver otros trabajos -->
+            <article class="pieza ver-todos">
+                <a href="general.html">
+                    <div class="contenido-ver-todos">
+                        <img src="img/icono-ver.svg" alt="icono ver más">
+                        <h3>Ver todos los trabajos</h3>
+                    </div>
+                </a>
+            </article>
+        </div>
+        </div>
+
+
+        <!-- Tema 2 Diseño de Marca-->
+        <h3 class="subtitulo-portafolio">Diseño de Marcas</h3>
+        <div class="grid-portafolio">
+            <!-- Trabajo 1 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto21.html">
+                    <img src="img/diseño-grafico/Portafolio/diseño-marca/babytec.jpg" alt="BabyTec">
+                    <h3>BABYTEC</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 2 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto22.html">
+                    <img src="img/diseño-grafico/Portafolio/diseño-marca/createc.jpg" alt="CreaTec">
+                    <h3>CREATEC</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 3 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto23.html">
+                    <img src="img/diseño-grafico/Portafolio/diseño-marca/securytec.jpg" alt="SecuryTec">
+                    <h3>SECURYTEC</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 4 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto24.html">
+                    <img src="img/diseño-grafico/Portafolio/diseño-marca/CRAFTIX3D LOGOTIPO.jpg" alt="Craftix3d">
+                    <h3>CRAFTIX.3D</h3>
+                </a>
+            </article>
+        </div>
+
+
+
+
+
+        <!-- Tema 3 Editorial -->
+        <h3 class="subtitulo-portafolio">Diseño editorial</h3>
+        <div class="grid-portafolio">
+            <!-- Trabajo 1 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto25.html">
+                    <img src="img/diseño-grafico/Portafolio/editorial/fotolibro.jpg" alt="Foto libro">
+                    <h3>FotoLibro "Notion"</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 2 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto26.html">
+                    <img src="img/diseño-grafico/Portafolio/editorial/Batman Año Uno Comic Version Tapa Dura.jpg" alt="Portada">
+                    <h3>Diseño Comic Batman</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 3 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto27.html">
+                    <img src="img/diseño-grafico/Portafolio/editorial/mockup Portada Contratapa.jpg" alt="Revista Pixel Chronicles">
+                    <h3>Revista Pixel Chronicles</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 4 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto28.html">
+                    <img src="img/diseño-grafico/Portafolio/editorial/mockup señalador 1.jpg" alt="Señaladores">
+                    <h3>Variedad Señaladores</h3>
+                </a>
+            </article>
+        </div>
+
+
+
+
+        <!-- Tema 4 Video -->
+        <h3 class="subtitulo-portafolio">Videos</h3>
+        <div class="grid-portafolio">
+            <!-- Trabajo 1 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto29.html">
+                    <!-- video, que se reproduzca solo y que este muteado -->
+                    <video autoplay loop muted src="img/diseño-grafico/Portafolio/videos/Portafolio Video.mp4"  alt="Video Portafolio"></video>
+                    <h3>Portafolio Diseñador Grafico</h3>
+                </a>
+            </article>
+            <!-- Trabajo 2 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto30.html">
+                    <!-- video, que se reproduzca solo y que este muteado -->
+                    <video autoplay loop muted src="img/diseño-grafico/Portafolio/videos/Nike-Romanticismo.mp4"  alt="Publicidad Nike-Romanticismo"></video>
+                    <h3>Nike x Romanticismo</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 3 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto31.html">
+                    <!-- video, que se reproduzca solo y que este muteado -->
+                    <video autoplay loop muted src="img/diseño-grafico/Portafolio/videos/TP2_Img y Movimiento_Prieto Rodrigo.mp4"  alt="No hay nada Personal - Motion Graphics"></video>
+                    <h3>Nada Personal Motion Graphics</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 4 -->
+            <article class="pieza">
+                <a href="portafolio/diseño/proyecto32.html">
+                    <!-- video, que se reproduzca solo y que este muteado -->
+                    <video autoplay loop muted src="img/diseño-grafico/Portafolio/videos/TP1_Img y Movimiento_Prieto Rodrigo.mp4"  alt="Video the Batman"></video>
+                    <h3>Primer Video The Batman</h3>
+                </a>
+            </article>
+        </div>
+    </section>
+    
+    
+    
+
+
+    <!-- Pie de Pagina (Footer) -->
+    <footer>
+        <div class="footer-logo">
+            <h2>Mi Portafolio Personal</h2>
+        </div>
+        <!-- Iconos - Botones  -->
+        <div class="footer-icons">
+            <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="img/mail.svg" alt="Mail"></a>
+            <a href="#"><img src="img/ubicacion.svg" alt="Ubicación"></a>
+            <a href="#"><img src="img/behance.svg" alt="Behance"></a>
+        </div>
+
+        <!-- Texto Footer -->
+        <div class="footer-info">
+            <p>2025 - Diseñado por Rodrigo Prieto</p>
+            <p><a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a></p>
+        </div>
+    </footer>
+</body>
+</html>

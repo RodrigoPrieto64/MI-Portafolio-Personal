@@ -1,0 +1,1135 @@
+/*_____________________________________ Tipografías _____________________________________*/
+@font-face {
+    font-family: 'UniversLTStd';
+    src: url('font/Univers/UniversLTStd-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'UniversLTStd';
+    src: url('font/Univers/UniversLTStd-Black.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'UniversLTStd';
+    src: url('font/Univers/UniversLTStd-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('font/Futura/FuturaStd-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('font/Merriweather/Merriweather_24pt-Regular.ttf') format('opentype');
+    font-weight: 400;
+}
+
+/*_________________________________ BODY y otros parametros generales _____________________________*/
+body {
+    background-color: #ffe8c1;
+}
+
+p {
+    font-family:'Merriweather', sans-serif;
+    font-size: 18px;
+}
+
+#tituloG h1{
+    font-size: 80px;
+    color: #4D0101;
+    font-family: 'Futura', sans-serif;
+    text-align: center;
+}
+
+/*_____________________________________ BOTONES _____________________________________*/
+.boton {
+    margin-top: 25px;
+    padding: 10px 35px;
+    border: 2px solid #D22929;
+    background-color: white;
+    color: #D22929;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'UniversLTStd', sans-serif;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.boton:hover { /*Transicion para el boton cambio color*/
+    background-color: #D22929;
+    color: white;
+}
+
+.boton-arte { /*boton arte*/
+    margin-top: 25px;
+    padding: 10px 35px;
+    background-color: #21436c;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'UniversLTStd', sans-serif;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.boton-arte:hover { /*Transicion para el boton cambio color*/
+    background-color: white;
+    color: #21436c;
+    border: 2px solid #21436c;
+}
+
+/*Para que el header quede fijo y no haya ningun problema*/
+header {
+    position: fixed;
+    z-index: 999; 
+}
+
+/*_____________________________________ Header _____________________________________*/
+#menuPort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 64px;
+    background-color: #D22929;
+    font-family: 'UniversLTStd', sans-serif;
+    position: sticky;
+    top: 0;
+}
+/* Logotipo R */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Futura', sans-serif;
+}
+/*tamaño y transicion a manera que se agrande un poco*/
+.logo img {
+    height: 35px;
+    width: auto;
+    transition: height 0.3s ease; 
+}
+
+.logo img:hover{
+    height: 40px; 
+}
+
+/* Quitar puntos y darle un espacio entre si al menu*/
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+/* estilo para la darle  "a" (texto)*/
+nav ul li a {
+    font-family: 'UniversLTStd', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+/* cambio color del texto al pasar el mouse*/
+nav ul li a:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+/*_____________________________________ Presentación _____________________________________*/
+
+/* crear un wallpaper como fondo*/
+#presentacion {
+    background: url(img/inicio/wallpaper-inicio.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 60px 20px;
+    margin: 0 auto;
+
+    max-width: 1320px;
+    min-width: 1200px;
+}
+/* estilos para texto "Diseñador Grafico y Artista" como tambien h1, h3, p*/
+.texto-presentacion {
+    font-family: 'UniversLTStd', sans-serif;
+}
+
+.texto-presentacion h1 {
+    font-size: 80px;
+    color: #ff4a4a;
+    font-family: 'Futura', sans-serif;
+    margin-bottom: 10px;
+}
+
+.texto-presentacion h3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.texto-presentacion p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Bloque para la img de perfil*/
+.img-presentacion {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* img de perfil*/
+.img-presentacion img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px; 
+}
+/*_____________________________________ Sobre mí _____________________________________*/
+/* Section ¿Quien soy? Sobre mi */
+#mi-persona {
+    margin: 25px auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    max-width: 1320px;
+    min-width: 1200px;
+}
+/* estilos h2,h3,p */
+#mi-persona h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    color: #A00A0A;
+    margin-bottom: 10px;
+}
+
+#mi-persona h3 {
+    font-family: 'UniversLTStd', sans-serif;
+    font-size: 24px;
+    color: #21436c;
+    margin-bottom: 10px;
+}
+
+#mi-persona p {
+    line-height: 1.6;
+    margin: 0;
+}
+/* Fila general */
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+/* para que quede como 2 columnas */
+.quien-soy,
+.sobre-mi,
+.img-quien-soy,
+.img-sobre-mi {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+/* estilo para las img de las filas */
+.img-quien-soy img,
+.img-sobre-mi img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+/*_____________________________________ Conocimientos _____________________________________*/
+/* Section conocimientos */
+#conocimientos {
+    margin: 100px auto;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 1320px;
+    min-width: 1200px;
+    font-family: 'Futura', sans-serif;
+}
+/*  estilos h2*/
+#conocimientos h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #A00A0A;
+}
+
+/* Contenedor para las columnas de minimo 180 px */
+.conocimientos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+}
+/* bloque de la "habilidad" o mejor dicho conocimiento */
+.skill {
+    background-color: #f8f8f8;
+    padding: 30px 15px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+/* transicion al pasar el mouse */
+.skill:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+/* estilos img */
+.skill img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+/* Estilos para titulo y subtitulo de la img */
+.skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #08274E;
+}
+
+.skill p {
+    font-weight: 600;
+    color: #4D0101;
+}
+
+/*_____________________________________ ¿Que hago? _____________________________________*/
+/* Section ¿Que suelo hacer? */
+#que-hago {
+    margin: 120px auto;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 1320px;
+    min-width: 1200px;
+    font-family: 'UniversLTStd', sans-serif;
+}
+/* estilos h2,h3,p */
+#que-hago h2 {
+    font-size: 48px;
+    color: #A00A0A;
+    font-family: 'Futura', sans-serif;
+}
+
+#que-hago h3 {
+    font-size: 24px;
+    color: #21436c;
+}
+
+#que-hago p {
+    margin: 0;
+    line-height: 1.5;
+}
+/* Contenedor en dos columnas con separación de 40px */
+.contenido-que-hago {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+/* estilo para las img para que se encuadren y no se vayan a otro tamaño */
+.img-habilidades {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.img-habilidades img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+/* Columna derecha: organiza elementos en vertical con espacio entre ellos */
+.columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+/* botones categorias*/
+.botones-categorias {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/*_____________________________________ Ultimos Trabajos _____________________________________*/
+/*Section ultimos trabajos "Galeria"*/
+#ultimos-tp {
+    margin: 75px auto;
+    padding: 0 20px;
+    text-align: center;
+    max-width: 1320px;
+    min-width: 1200px;
+}
+/* estilos h2*/
+#ultimos-tp h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    color: #A00A0A;
+    margin-bottom: 60px;
+}
+/* Contenedor de las columnas, 3 columnas en este caso*/
+.galeria-tp {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    justify-items: center;
+    align-items: start;
+}
+
+/* Contenedor  bloque (img)*/
+.trabajo {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 247, 247, 0.845);
+    border-radius: 30px;
+    box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+/* estilo img de los trabajos (3 trabajos)*/
+.trabajo img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* botones portafolio*/
+.boton-portafolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/*__________________________________________________________________________ 
+
+DISEÑO GRAFICO ESTILOS
+
+__________________________________________________________________________*/
+/*_____________________________________ Carrusel _____________________________________*/
+#carrusel {
+    position: relative;
+    margin: 0 auto;   
+    overflow: hidden;
+    height: 450px; 
+}
+/* Imágenes del carrusel: se adaptan al ancho y cubren el contenedor sin deformarse */
+.f-carousel__slide img {
+    object-fit: cover;     
+    width: 100%;
+}
+
+/*_____________________________________ DISEÑO GRAFICO - INICIO _____________________________________*/
+/* Section Diseño grafico - Inicio*/
+#diseño-grafico {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1320px;
+}
+/* estilos textos h2, h3, p*/
+#diseño-grafico  h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    color: #A00A0A;
+    margin-bottom: 10px;
+}
+
+#diseño-grafico h3 {
+    font-family: 'UniversLTStd', sans-serif;
+    font-size: 24px;
+    color: #21436c;
+    margin-bottom: 10px;
+}
+
+#diseño-grafico p {
+    margin: 0;
+    line-height: 1.5;
+}
+/* Boton*/
+.boton_D{
+    margin-top: 25px;
+    padding: 10px 35px;
+    border: 2px solid #08274E;
+    background-color: white;
+    color: #08274E;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'UniversLTStd', sans-serif;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+/* Al pasar el mouse*/
+.boton_D:hover { 
+    background-color: #08274E;
+    color: white;
+}
+/*Fila*/
+.fila {
+    position: relative;
+    display: flex;  
+    overflow: hidden;
+}
+/* Crear ese bloque decorativo azul*/
+.bloque-decorativo {
+    width: 700px;
+    height: 440px;
+    background-color: #07226C;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+/* Bloque (contenido) de texto y tambien para que coicidan y no se salgan del bloque*/
+.bloque-texto {
+    background-color: #ffe8c1;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 2;
+    max-width: 732px;
+    margin-right: -300px;
+}
+/* Bloque secundario abajo (contenido) de texto*/
+.bloque-secundario {
+    width: 500px;  
+    height: 280px;      
+    
+}
+.bloque-derecha {
+    margin-left: 0;         
+    max-width: 700px;
+}
+/*_____________________________________ Servicios _____________________________________*/
+/*Section mi servicios*/
+#mi-servicio {
+    margin: 100px auto;
+    padding: 0 20px;
+    text-align: center;
+
+    max-width: 1320px;
+    min-width: 1200px;
+    background-image: url(img/diseño-grafico/fondo_servicio.svg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+/* estilos h2,h3, p*/
+#mi-servicio h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #A00A0A;
+    font-family: 'Futura', sans-serif;
+    font-weight: 700;
+}
+
+#mi-servicio h3 {
+    font-family: 'UniversLTStd', sans-serif;
+    font-size: 24px;
+    color: #21436c;
+}
+
+.servicio h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #A00A0A;
+    margin: 10px auto;
+    opacity: 0;               
+    transform: scaleX(0);     
+    transition: all 0.3s ease;
+}
+
+/* Línea decorativa que aparece debajo del título al hacer hover */
+.servicio:hover h3::after {
+    opacity: 1;
+    transform: scaleX(1); 
+}
+
+/* columna para los servicios*/
+.servicio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* estilos para el contenido de servicio y transicion */
+.servicio {
+    max-width: 400px; 
+    width: 75%;    
+    padding: 30px;
+    margin: 20px 20px;
+    background: #fdfdfd;
+    border: 3px solid #A00A0A;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-8px);
+}
+
+/* estilos iconos (svg)*/
+.servicio img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; 
+}
+
+/*__________________________________________________________________________ 
+
+ARTE DIGITAl
+
+__________________________________________________________________________*/
+/* Section Inicio A (Inicio de la parte del arte digital)*/
+#InicioA{
+    margin: 100px auto;
+    max-width: 1320px;
+    min-width: 1200px;
+    background-color: #ffe8c1;
+}
+
+/* Estilos para el bloque en el medio de ¿Porque me gusta el arte?*/
+.contenido {
+    display: flex;
+    justify-content: center;
+}
+
+/*contenido texto, info-art , h3, p*/
+.info-art {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: stretch;
+}
+
+.info-art h3 {
+    font-family: 'UniversLTStd', sans-serif;
+    font-weight: 800;
+    color: #21436c;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding-left: 25px;
+    border-left: 6px solid #21436c;
+    margin: 0;
+}
+
+.info-art p {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+/*_____________________________________ MATERIAL _____________________________________*/
+/* Section Material*/
+#material {
+    width: 100%;
+    min-height: 600px;
+    padding: 80px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('img/arte-digital/fondo-material-01.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; 
+}
+
+/* Contenido (fila)*/
+.fila-material {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1320px;
+    width: 100%;
+}
+/* Contenido (texto)*/
+.que-uso-dibujar {
+    padding: 24px 32px;
+    max-width: 800px;
+    width: 100%;
+}
+/* img de la tabletas que uso*/
+.img-tabletas img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+/* estilos h2,h3 y p*/
+.que-uso-dibujar h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    color: #ffe8c1;
+    margin-bottom: 10px;
+}
+
+.que-uso-dibujar h3 {
+    font-family: 'UniversLTStd', sans-serif;
+    font-size: 22px;
+    color: #260202;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.que-uso-dibujar p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+/*__________________________________ PORTAFOLIO STYLE _____________________________________*/
+/*Section portafolio en general (tanto arte, como diseño)*/
+#portafolio h2{
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    color: #A00A0A;
+    text-align: center;
+}
+
+/*Coicidir los bloques*/
+#portafolio {
+    max-width: 1320px;
+    min-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+/*subitulo*/
+.subtitulo-portafolio {
+    font-family: 'Futura', sans-serif;
+    font-size: 28px;
+    color: #21436c;
+    margin: 60px 0 20px;
+    text-align: left;
+    border-bottom: 3px solid #A00A0A;
+}
+
+/*Columnas para cada proyecto*/
+.grid-portafolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Cada pieza */
+.pieza {
+    width: 280px;
+    height: 350px; 
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+/* Estilo del enlace dentro de la pieza: ocupa todo, con borde redondeado */
+.pieza a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* img, video tamaños*/
+.pieza img,
+.pieza video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Overlay oscuro al hacer pasar */
+.pieza a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Título oculto al inicio */
+.pieza h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 18px;
+    font-family: 'UniversLTStd', sans-serif;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Hover: imagen escala, aparece texto */
+.pieza a:hover::before {
+    opacity: 1;
+}
+
+.pieza a:hover img,
+.pieza a:hover video {
+    transform: scale(1.05);
+}
+
+.pieza a:hover h3 {
+    opacity: 1;
+}
+/*____________________________ Ver otros trabajos ____________________________*/
+/*boton o contenedor de ver otros trabajos*/
+.pieza.ver-todos a {
+    background: linear-gradient(135deg, #A00A0A, #5F1A1A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+/*al pasar el mouse, se escala*/
+.pieza.ver-todos a:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #8C0808, #3E0F0F);
+}
+/* Centro del bloque "ver todos", alineado en vertical y horizontal */
+.pieza.ver-todos .contenido-ver-todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Icono "+" */
+.pieza.ver-todos img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.5;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 0px;
+}
+/* h3*/
+.pieza.ver-todos h3 {
+    font-size: 20px;
+    color: #fff8f0;
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover: ícono sube, texto aparece hacia abajo */
+.pieza.ver-todos a:hover img {
+    transform: translateY(-10px);
+    opacity: 0.6;
+}
+
+.pieza.ver-todos a:hover h3 {
+    opacity: 1;
+}
+
+/*____________________________ Proyecto (Portfolio trabajos) ____________________________*/
+/*section proyecto (trabajos en si)*/
+.proyecto {
+    display: flex;
+    justify-content: center;
+}
+/*contenedeor de dicho proyecto*/
+.contenedor-proyecto {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+
+    max-width: 1320px;
+    min-width: 1200px;
+    margin: 50px auto;
+}
+/*tamaños para img y video*/
+.media-proyecto img,
+.media-proyecto video {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+/*tamaño para el bloque o conetenedor de info (texto)*/
+.info-proyecto {
+    max-width: 550px;
+}
+/*estilos h2,h3,p*/
+.info-proyecto h2 {
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    color: #A00A0A;
+    margin-bottom: 10px;
+}
+
+.info-proyecto h3 {
+    color: #4872A6;
+    margin-bottom: 10px;
+    font-family: 'UniversLTStd', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.info-proyecto p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/*___________________________________________________________________
+
+CONTACTO
+___________________________________________________________________*/
+/*section contacto*/
+#contacto {
+    max-width: 1320px;
+    min-width: 1200px;
+    margin: 100px auto;
+}
+
+/* Bloque superior */
+.contacto-header {
+    background-color: #fff8f0; 
+    text-align: center;
+    padding: 20px 20px 20px;
+}
+/* Bloque superior h1*/
+.contacto-header h1 {
+    font-size: 48px;
+    color: #A00A0A;
+    font-family: 'Futura', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Grid de dos columnas */
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    background-color: #ececec;
+}
+
+/* Mapa */
+.contacto-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Formulario */
+.contacto-form .form-bloque {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* h3, p del formulario*/
+.contacto-form h3 {
+    font-family: 'Futura', sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #D22929;
+}
+
+.contacto-form p {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #104F9C;
+}
+/* texto  del formulario, nombre, email, mensaje */
+.contacto-form label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+    font-family: 'Futura', sans-serif;
+    color: #4D0101;
+}
+/* contenedor del texto a introducir del formulario*/
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'UniversLTStd', sans-serif;
+}
+/*bloque de la pantalla contacto (tamaño)*/
+.contacto-hero {
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0; 
+}
+/* img(tamaño)*/
+.contacto-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*Estilo h1*/
+.contacto-titulo h1 {
+    font-size: 80px;
+    color: #4D0101;
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+}
+
+/*Contendor del boton y distintos botones (enviar/resetear)*/
+.boton-formulario {
+    display: flex;
+    gap: 20px;
+}
+
+.boton-enviar,
+.boton-resetear {
+    margin-top: 25px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'UniversLTStd', sans-serif;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Botón enviar */
+.boton-enviar {
+    background-color: #D22929;
+    color: white;
+}
+
+.boton-enviar:hover {
+    background-color: #4D0101;
+}
+
+/* Botón resetear */
+.boton-resetear {
+    background-color: #ffffff;
+    color: #4872A6;
+    border: 2px solid #4872A6;
+}
+
+.boton-resetear:hover {
+    background-color: #08274E;
+    border: 2px solid #08274E;
+    color: white;
+}
+
+/*_____________________________________ Footer _____________________________________*/
+footer {
+    background-color: #08274E;
+    color: #FFF3DF;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'UniversLTStd', sans-serif;
+
+}
+/* estilos h2 titulo "Mi portafolio personal" del fotter*/
+.footer-logo h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Futura', sans-serif;
+}
+/* espacio entre iconos*/
+.footer-icons {
+    margin: 25px 0;
+}
+/* iconos (a)*/
+.footer-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/*tamaño img (svg)*/
+.footer-icons a img {
+    width: 45px;
+    height: 45px;
+}
+
+.footer-icons a:hover {
+    transform: scale(1.2);
+}
+/* Pie de página con distribución horizontal, línea superior y texto gris claro */
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    color: #ccc;
+}
+/* estilos p a*/
+.footer-info p,
+.footer-info a {
+    font-size: 18px;
+    color: #ccc;
+    margin: 8px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Futura', sans-serif;
+}
+.footer-info a:hover {
+    color: #FFF3DF;
+}

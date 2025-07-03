@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- ICONO PAGINA WEB -->
+    <link rel="icon" sizes="64x64" href="img/LOGOTIPO.svg">
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Arte Digital</title>
+</head>
+<body>
+<body>
+    <!-- Menu Principal -->
+    <header id="menuPort">
+        <!-- Contenedor de logo + título -->
+        <div class="logo-titulo">
+            <div class="logo">
+                <a href="index.html"><img src="img/LOGOTIPO.svg" alt="Logo"></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="diseño_grafico.html">Diseño Gráfico</a></li>
+                <li><a href="arte_digital.html">Arte Digital</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Carrusel img fondos -->
+    <section id="carrusel">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
+        <div class="f-carousel" id="myCarousel">
+            <div class="f-carousel__viewport">
+                <div class="f-carousel__slide"><img src="img/arte-digital/fondo1.jpg" alt="fondo 1"></div>
+                <div class="f-carousel__slide"><img src="img/arte-digital/fondo2.jpg" alt="fondo 2"></div>
+                <div class="f-carousel__slide"><img src="img/arte-digital/fondo3.jpg" alt="fondo 3"></div>
+                <div class="f-carousel__slide"><img src="img/arte-digital/fondo4.jpg" alt="fondo 4"></div>
+            </div>
+        </div>
+        <!-- Codigo Script para el carrusel  -->
+        <script>
+        const container = document.getElementById("myCarousel");
+        const options = { infinite:false };
+        Carousel(container, options).init();
+        </script>
+    </section>
+
+    <!-- Titulo Principal -->
+    <section id="InicioA">                
+        <div id="tituloG">
+            <h1>ARTE DIGITAL</h1>
+        </div>
+            <div class="contenido">
+                <div class="info-art">
+                    <h3>
+                        ¿POR QUÉ ME GUSTA<br>
+                        EL ARTE EN GENERAL?
+                    </h3>
+                    <p>Desde que tengo memoria siempre me apasiona el arte en sí, incontables cuadernos fueron llenados de miles de dibujos. Siempre vi el arte como una manera de expresarme y desconectar del mundo.</p>
+                </div>
+            </div>
+    </section>
+    
+    <!-- Section 1 ¿Por que me gusta el Arte Digital en general? -->
+    <section id="mi-persona">
+            <!-- Fila: ¿Que suelo dibujar? -->
+            <div class="fila">
+                <!-- info -->
+                <article class="quien-soy">
+                    <h2>¿Que suelo dibujar?</h2>
+                    <h3>¿Que es lo que hago usualmente?</h3>
+                    <p>Realmente estoy abierto a todo en si, generalmente suelo dibujar cosas variadas, desde mi niñez que dibujo y he dibujado bastantes cosas, ya sea tradicional pasando por lápiz o papel llegando a inclusive a pintar con pinceles y acuarelas. Actualmente suelo irme por el lado de dibujar cosas en 2D, mi estilo varia con el tiempo pero la base del mismo es el estilo anime.
+                    </p>
+                    <a href="#material" class="boton">Descubre mas sobre mi gusto por el arte</a>
+                </article>
+                <!-- img -->
+                <div class="img-quien-soy">
+                    <img src="img/pexels-pixabay-355952.jpg" alt="Imagen quien soy">
+                </div>
+            </div>
+    </section>
+
+    <!-- Section 2 ¿Que suelo usar para dibujar? -->
+    <section id="material">
+        <div class="fila-material">
+            <!-- img -->
+            <div class="img-tabletas">
+                <img src="img/arte-digital/tabletas-01.svg" alt="tableta-grafica">
+            </div>
+                <!-- info -->
+                <article class="que-uso-dibujar">
+                    <h2>¿Que uso para dibujar?</h2>
+                    <h3>Mi herramienta que uso a la hora de dibujar</h3>
+                    <p>A la hora de dibujar casi siempre usaba un cuaderno en donde me la pasaba boceteando todo el tiempo, mis herramientas en tradicional eran simples, un lapiz comun, nada del otro mundo.En digital es todo distinto, actualmente estoy usando una tableta grafica <strong> XP-PEN Deco 01 v2 </strong>, antes solia usar la tableta <strong>Wacom Intuos Small</strong>, siendo mi primera experiencia en digital.</p>
+                </article>
+        </div>
+    </section>
+
+
+    <!-- Section 3 Portafolio Arte Digital -->
+    <section id="portafolio">
+        <h2>Portafolio Arte Digital</h2>
+        <div class="grid-portafolio">
+            <!-- Trabajo 1 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto1.html">
+                    <img src="img/arte-digital/portafolio/Pokemon Red - Fondo Simple.jpg" alt="Dibujo Digital Pokemon 1">
+                    <h3>Pokemon Protagonista Red</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 2 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto2.html">
+                    <img src="img/arte-digital/portafolio/Leon Kennedy.jpg" alt="Dibujo Digital Leon Scott Kennedy">
+                    <h3>Leon Scott Kennedy</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 3 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto3.html">
+                    <img src="img/arte-digital/portafolio/Joker.jpg" alt="Dibujo Digital Joker - Persona 5">
+                    <h3>Joker Persona 5</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 4 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto4.html">
+                    <img src="img/arte-digital/portafolio/Spider-man YH.jpg" alt="Dibujo Digital Spider-man YH">
+                    <h3>Spider-man Your Friendly Neighborhood</h3>
+                </a>
+            </article>
+            
+            <!-- Trabajo 5 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto5.html">
+                    <img src="img/arte-digital/portafolio/Power.png" alt="Dibujo Digital Power">
+                    <h3>Power</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 6 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto6.html">
+                    <img src="img/arte-digital/portafolio/Spider-Man Unlimited.jpg" alt="Dibujo Digital Spider-man Unlimited">
+                    <h3>Spider-man Unlimited</h3>
+                </a>
+            </article>
+
+            <!-- Trabajo 7 -->
+            <article class="pieza">
+                <a href="portafolio/arte/proyecto7.html">
+                    <img src="img/arte-digital/portafolio/DareDevil Traje Rojo!.jpg" alt="Dibujo Digital DareDevil">
+                    <h3>DareDevil Traje Rojo</h3>
+                </a>
+            </article>
+
+            <!-- Ver otros trabajos -->
+            <article class="pieza ver-todos">
+                <a href="general-arte.html">
+                    <div class="contenido-ver-todos">
+                        <img src="img/icono-ver.svg" alt="icono ver más">
+                        <h3>Ver todos los trabajos</h3>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+
+
+    <!-- Pie de Pagina (Footer) -->
+    <footer>
+        <div class="footer-logo">
+            <h2>Mi Portafolio Personal</h2>
+        </div>
+        <!-- Iconos - Botones  -->
+        <div class="footer-icons">
+            <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="img/mail.svg" alt="Mail"></a>
+            <a href="#"><img src="img/ubicacion.svg" alt="Ubicación"></a>
+            <a href="#"><img src="img/behance.svg" alt="Behance"></a>
+        </div>
+
+        <!-- Texto Footer -->
+        <div class="footer-info">
+            <p>2025 - Diseñado por Rodrigo Prieto</p>
+            <p><a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a></p>
+        </div>
+    </footer>
+</body>
+</html>
