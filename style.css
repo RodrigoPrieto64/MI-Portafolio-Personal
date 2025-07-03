@@ -451,7 +451,6 @@ __________________________________________________________________________*/
     display: flex;
     flex-direction: column;
     gap: 100px;
-    max-width: 1320px;
 }
 /* estilos textos h2, h3, p*/
 #diseño-grafico  h2 {
